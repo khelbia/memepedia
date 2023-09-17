@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(255, 249, 67, 0.667);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: rgb(104, 48, 14);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.container span {
+  color: rgb(7, 7, 88);
+  font-family: Arial;
+  font-weight: 100r;
+  font-size: 0.75em;
+}
+.input {
+  margin-top: 10px;
+  --pad: 15px;
+  --bor: 2px;
+
+  width: calc(100% - (var(--pad) * 2) - (var(--bor) * 2));
+  height: 5%;
+
+  padding: var(--pad);
+  font-size: 1em;
+  border-radius: 10px;
+  border: var(--bor) solid rgb(45, 15, 2);
+
+  transition: all 1s ease;
+}
+
+.input:focus {
+  background-color: rgba(189, 141, 79, 0.304);
+  outline: none;
+  color: rgb(61, 43, 43);
+}
+
+.input::placeholder {
+  color: rgb(46, 10, 10);
+}
+.input:focus::placeholder {
+  color: rgba(189, 141, 79, 0.304);
+}
+.container {
+  width: 60vw;
+  height: auto;
+
+  background-color: rgba(156, 151, 20, 0.2);
+
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  margin: 20px 0;
+}
+
+.container button {
+  margin-top: 10px;
+
+  width: 100%;
+
+  --pad: 15px;
+  --bor: 2px;
+
+  height: 5%;
+
+  padding: var(--pad);
+  font-size: 1em;
+  border-radius: 10px;
+  border: var(--bor) solid rgb(45, 15, 2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.holder {
+  width: 70%;
+  margin: inherit;
+}
+.memes {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+.memeimag {
+  width: 13vw;
+  margin: inherit;
+}
+.caixa_socialmedia {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-direction: inherit;
+  margin: inherit;
+  user-select: none;
+}
+.container ion-icon {
+  font-size: 40px;
+  display: inline-block;
+  border: 3px solid rgb(104, 48, 14);
+  background-color: rgba(255, 255, 255, 0.731);
+  color: rgb(17, 0, 255);
+
+  border-radius: 100px;
+
+  margin: 0px 5px 5px 10px;
+}
+#facebook {
+  color: blue;
+}
+.fundo {
+  position: absolute;
+  width: 150px;
+}
